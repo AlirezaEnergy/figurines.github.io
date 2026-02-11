@@ -319,3 +319,119 @@ footer a:hover {
         right: 20px;
     }
 }
+
+/* Featured Product Section */
+.featured-product {
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+    padding: 0 1rem;
+    direction: rtl;
+}
+
+.featured-product h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+.featured-card {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+}
+
+.featured-image {
+    flex: 1;
+    max-width: 400px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.featured-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.featured-image:hover img {
+    transform: scale(1.05);
+}
+
+.featured-info {
+    flex: 1;
+    text-align: right;
+    position: relative;
+}
+
+.featured-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+.featured-info .price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #e74c3c;
+    margin-bottom: 1rem;
+}
+
+.featured-info .description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.featured-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive Featured Section */
+@media (max-width: 768px) {
+    .featured-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+    
+    .featured-info {
+        text-align: center;
+    }
+    
+    .featured-product h2 {
+        font-size: 1.5rem;
+    }
+    
+    .featured-info h3 {
+        font-size: 1.3rem;
+    }
+    
+    .featured-info .price {
+        font-size: 1.5rem;
+    }
+}
